@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="nav_view">
+    <group android:checkableBehavior="single">
+    <item
+        android:id="@+id/payment"
+        android:title="Payment"
+        android:icon="@drawable/ic_baseline_monetization_on_24">
+
+    </item>
+    <item
+        android:id="@+id/trans"
+        android:title="Transactions"
+        android:icon="@drawable/ic_baseline_swap_horiz_24">
+
+    </item>
+    <item
+        android:id="@+id/card"
+        android:title="My Cards"
+        android:icon="@drawable/ic_baseline_credit_card_24">
+
+    </item>
+    <item
+        android:id="@+id/promo"
+        android:title="Promotions"
+        android:icon="@drawable/ic_baseline_loyalty_24">
+
+    </item>
+    <item
+        android:id="@+id/saving"
+        android:title="Savings"
+        android:icon="@drawable/ic_baseline_attach_money_24">
+
+    </item>
+    </group>
+</menu>

@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">DiaryApp</string>
+    <string name="create_diary">Tạo</string>
+    <string name="title">Tựa đề</string>
+    <string name="date">Ngày</string>
+    <string name="Save">Lưu</string>
+    <string name="cancel">Hủy</string>
+    <string name="content">Nội dung</string>
+    <string name="update">Sửa</string>
+    <string name="delete">Xóa</string>
+    <string name="Edit">Sửa</string>
+    <string name="takeVideo">Quay phim</string>
+    <string name="takePic">Chụp ảnh</string>
+    <string name="media">Ảnh/video</string>
+    <string name="location">Vị trí</string>
+</resources>

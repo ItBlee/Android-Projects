@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">PhotoApp</string>
+    <string name="takePic">Chụp ảnh</string>
+    <string name="slideshow">SlideShow</string>
+    <string name="download">Tải ảnh</string>
+    <string name="save">Lưu trữ</string>
+    <string name="Back">Trở về</string>
+    <string name="next">Sau</string>
+    <string name="prev">Trước</string>
+    <string name="x_y">x/y</string>
+</resources>

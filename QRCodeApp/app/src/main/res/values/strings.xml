@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">QRCodeApp</string>
+    <string name="nullQRcode">Chưa quét mã QR</string>
+    <string name="scanQR">Quét mã QR</string>
+</resources>

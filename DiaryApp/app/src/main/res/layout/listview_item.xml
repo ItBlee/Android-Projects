@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/lvItemMain"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
+        <TextView
+            android:id="@+id/lvItemTitleID"
+            android:layout_width="match_parent"
+            android:layout_height="29dp"
+            android:text="@string/title"
+            android:textColor="@android:color/background_dark"
+            android:textSize="20sp"
+            android:layout_margin="10dp" />
+
+        <TextView
+            android:id="@+id/lvItemDateID"
+            android:layout_width="match_parent"
+            android:layout_height="31dp"
+            android:paddingLeft="10dp"
+            android:text="@string/date"
+            android:textColor="#808080"
+            android:textSize="15sp"
+            android:paddingStart="10dp"
+            tools:ignore="RtlSymmetry" />
+
+        <TextView
+            android:id="@+id/lvItemLocationID"
+            android:layout_width="match_parent"
+            android:layout_height="31dp"
+            android:paddingLeft="10dp"
+            android:text="@string/location"
+            android:textColor="#808080"
+            android:textSize="15sp"
+            android:paddingStart="10dp"
+            tools:ignore="RtlSymmetry" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ivMedia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/images"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/lvItemMain"/>
+
+    <ImageView
+        android:id="@+id/ivWeather"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/sunshine"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/ivMedia"
+        android:layout_marginStart="20dp" />
+
+</RelativeLayout>

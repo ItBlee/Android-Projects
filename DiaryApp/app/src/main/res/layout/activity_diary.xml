@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:id="@+id/dialogId">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <EditText
+            android:id="@+id/txtTitle"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:padding="20dp"
+            android:background="@drawable/border"
+            android:ems="10"
+            android:hint="@string/title"
+            android:textColorHint="#a8a8a8"
+            android:inputType="textPersonName"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="2dp"
+            android:maxLength="35"
+            android:autofillHints="@string/title" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteY="38dp"
+        android:padding="5dp"
+        tools:ignore="MissingConstraints">
+
+        <EditText
+            android:id="@+id/txtContent"
+            android:layout_width="fill_parent"
+            android:layout_height="240dp"
+            android:padding="20dp"
+            android:background="@drawable/border"
+            android:ems="10"
+            android:gravity="start"
+            android:hint="@string/content"
+            android:textColorHint="#a8a8a8"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="48dp"
+            android:scrollbars="vertical"
+            android:inputType="textMultiLine"
+            android:autofillHints="@string/content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <EditText
+            android:id="@+id/txtLocation"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:padding="20dp"
+            android:background="@drawable/border"
+            android:ems="10"
+            android:hint="@string/location"
+            android:textColorHint="#a8a8a8"
+            android:inputType="textPersonName"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="2dp"
+            android:maxLength="35"
+            android:autofillHints="@string/title" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/ivMedia"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginLeft="10dp"
+            android:background="@android:color/transparent"
+            android:padding="20dp"
+            android:src="@drawable/media"
+            tools:ignore="ContentDescription" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="250dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="13dp"
+            android:padding="20dp">
+
+            <com.google.android.material.button.MaterialButtonToggleGroup
+                android:id="@+id/toggleButtonGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:selectionRequired="true"
+                app:singleSelection="true"
+                tools:ignore="MissingConstraints">
+
+                <Button
+                    android:id="@+id/btnLeft"
+                    style="@style/ToggleButtonWithIconOnly"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:icon="@drawable/sunshine"
+                    tools:layout_editor_absoluteX="168dp"
+                    tools:layout_editor_absoluteY="153dp" />
+
+                <Button
+                    android:id="@+id/btnCenter"
+                    style="@style/ToggleButtonWithIconOnly"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:icon="@drawable/sunlow"
+                    tools:layout_editor_absoluteX="173dp"
+                    tools:layout_editor_absoluteY="251dp" />
+
+                <Button
+                    android:id="@+id/btnRight"
+                    style="@style/ToggleButtonWithIconOnly"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:icon="@drawable/rain"
+                    tools:layout_editor_absoluteX="166dp"
+                    tools:layout_editor_absoluteY="340dp" />
+
+                <Button
+                    android:id="@+id/btnJustified"
+                    style="@style/ToggleButtonWithIconOnly"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:icon="@drawable/snow"
+                    tools:layout_editor_absoluteX="166dp"
+                    tools:layout_editor_absoluteY="447dp" />
+
+            </com.google.android.material.button.MaterialButtonToggleGroup>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="bottom|right"
+        android:layout_marginTop="5dp">
+
+        <Button
+            android:id="@+id/btnMedia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/media"
+            android:layout_marginRight="2dp"
+            android:layout_marginEnd="43dp"/>
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Save"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="25dp"/>
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cancel"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="25dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

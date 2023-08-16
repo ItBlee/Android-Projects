@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".FullPhotoActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+        <ImageView
+            android:id="@+id/ivFullPhoto"
+            android:layout_width="wrap_content"
+            android:layout_height="400dp"
+            android:layout_marginBottom="50dp"/>
+
+        <TextView
+            android:id="@+id/txtPage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="130dp"
+            android:layout_below="@+id/ivFullPhoto"
+            android:text="@string/x_y"
+            android:textSize="25sp"/>
+
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_toRightOf="@+id/btnPrev"
+            android:layout_below="@+id/txtPage"
+            android:text="@string/next"
+            android:layout_toEndOf="@+id/btnPrev"
+            android:layout_marginStart="100dp" />
+
+        <Button
+            android:id="@+id/btnPrev"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtPage"
+            android:text="@string/prev" />
+    </RelativeLayout>
+</LinearLayout>

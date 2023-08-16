@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">AlarmApp</string>
+    <string name="no_alarm_set">No Alarm set</string>
+    <string name="open_time_picker">Chọn báo thức mới</string>
+    <string name="cancel_alarm">cancel alarm</string>
+    <string name="create">Tạo</string>
+    <string name="cancel">Hủy</string>
+    <string name="alarm_manager_app">Alarm Manager App</string>
+    <string name="stop">Dừng báo thức</string>
+</resources>

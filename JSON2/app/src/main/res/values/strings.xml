@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">JSON2</string>
+    <string name="fetching_countries_data">Fetching countries data</string>
+    <string name="flag">flag</string>
+</resources>
